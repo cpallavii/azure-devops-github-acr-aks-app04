@@ -53,6 +53,7 @@ stages:
 
     - upload: manifests
       artifact: manifests
+    - task: SonarQubeAnalyze@5
     - task: SonarQubePublish@5
       inputs:
         pollingTimeoutSec: '300'
