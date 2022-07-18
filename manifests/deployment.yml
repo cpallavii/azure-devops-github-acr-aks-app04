@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: cpallaviiazuredevopsgithubacraksapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cpallaviiazuredevopsgithubacraksapp
+  template:
+    metadata:
+      labels:
+        app: cpallaviiazuredevopsgithubacraksapp 
+    spec:
+      containers:
+        - name: cpallaviiazuredevopsgithubacraksapp 
+          image: acrsample98.azurecr.io/cpallaviiazuredevopsgithubacraksapp
+          ports:
+          - containerPort: 80
