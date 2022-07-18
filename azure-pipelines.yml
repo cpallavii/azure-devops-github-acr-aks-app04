@@ -91,6 +91,7 @@ stages:
                 $(imagePullSecret)
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
+          - task: SonarQubeAnalyze@5
 
   - deployment: DeployPullRequest
     displayName: Deploy Pull request
