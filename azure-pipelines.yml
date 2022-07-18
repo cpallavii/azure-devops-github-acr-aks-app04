@@ -38,7 +38,7 @@ stages:
         SonarQube: 'SonarQube'
         scannerMode: 'CLI'
         configMode: 'manual'
-        cliProjectKey: 'new_new_AYIQVAMOj92uU1H5vMkS'
+        cliProjectKey: 'new_sonar_AYIQbLb_VEdVXwmHDJ97'
         cliProjectName: 'new'
         cliSources: '.'
     - task: Docker@2
